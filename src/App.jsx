@@ -66,12 +66,13 @@ const GLOBAL_CSS = `
     display: flex; align-items: center; justify-content: space-between;
     height: 64px;
   }
-  .nav-logo {
-    font-family: 'IM Fell English', serif;
-    font-size: 18px; font-style: italic;
-    color: var(--cream); cursor: pointer;
-    letter-spacing: 0.02em;
-  }
+ .nav-logo {
+  font-family: 'IM Fell English', serif;
+  font-size: 18px; font-style: italic;
+  color: var(--cream); cursor: pointer;
+  letter-spacing: 0.02em;
+  background: none; border: none; padding: 0;
+}
   .nav-logo span { color: var(--rouge-l); }
   .nav-links {
     display: flex; align-items: center; gap: 28px;
