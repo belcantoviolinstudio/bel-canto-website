@@ -107,7 +107,6 @@ const GLOBAL_CSS = `
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    margin-top: 80px;
   }
   .footer-brand { }
   .footer-logo {
@@ -758,7 +757,7 @@ function RepertoirePage() {
 // ══════════════════════════════════════════════════════════════════
 function EnsemblesPage({ setPage }) {
   return (
-    <div className="fade-in pt-nav pb-lg">
+    <div className="fade-in pt-nav">
       <div className="container">
         <span className="eyebrow">Ensembles & Group Classes</span>
         <h1 className="display">Beyond the <em>Individual</em></h1>
@@ -1118,8 +1117,8 @@ function PoliciesPage() {
 // ══════════════════════════════════════════════════════════════════
 function BookingPage() {
   return (
-    <div className="fade-in pt-nav pb-lg">
-      <div className="container-sm" style={{ textAlign:"center", paddingTop:80 }}>
+    <div className="fade-in pt-nav pb-lg" style={{ display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center" }}>
+      <div className="container-sm" style={{ textAlign:"center", paddingTop:80, margin:"0 auto", width:"100%", maxWidth:680 }}>
         <span className="eyebrow">Trial Lesson Inquiry</span>
         <h1 className="display">Begin Your <em>Inquiry</em></h1>
         <p className="lead">The booking questionnaire is a five-minute guided process. It helps ensure this is the right fit — for you and for the student.</p>
